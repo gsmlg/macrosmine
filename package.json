@@ -1,12 +1,14 @@
 {
-  "name": "bae-nodejs",
+  "name": "macrosmine",
   "version": "1.0.0",
-  "author": "bae",
-  "description": "The first bae nodejs app!",
+  "author": "gsmlg",
+  "description": "Macros mine is a light weight web application.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node node_modules/.bin/coffee server.coffee"
   },
   "dependencies": {
-    "express": "~4.4.3"
+    "express": "~4.4.3",
+    "coffee-script": "~1.7.1",
+    "handlebars": "~2.0.0-alpha.4"
   }
 }
