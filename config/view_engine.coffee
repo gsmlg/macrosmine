@@ -1,4 +1,4 @@
-{join, extname, dirname} = require 'path'
+{join, extname, dirname, resolve} = require 'path'
 fs = require 'fs'
 handlebars = require 'handlebars'
 
@@ -18,11 +18,21 @@ render = view_engine.render = (str, options, fn)->
   try
     engine.registerPartial name, partial for name, partial of options.partials
     engine.registerHelper name, helper for name, helper of options.helpers
-    tpl = (cache options) or (cache options, engine.compile(str, options))
-    fn null, tpl(options)
+    if options?.layout
+      engine.registerPartial 'yield', str
+      layout = if extname options.layout is '.hbs' then options.layout else options.layout + '.hbs'
+      layout = join __dirname, '..', 'app/views/layout', layout if resolve(layout) isnt layout
+      read layout, options, (err, str)->
+        return fn(err) if err
+        tpl = (cache options) or (cache options, engine.compile(str, options))
+        fn null, tpl(options)
+    else
+      tpl = (cache options) or (cache options, engine.compile(str, options))
+      fn null, tpl(options)
   catch error
     fn error
 
+renderLayout = view_engine.renderLayout = (layout, options, fn)->
 
 readCache = {}
 

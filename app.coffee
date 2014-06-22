@@ -2,8 +2,8 @@ module.exports = app = require('express')()
 
 config = require './config'
 
-app.engine 'html', config.view_engine
-app.set 'view engine', 'html'
+app.engine 'hbs', config.view_engine
+app.set 'view engine', 'hbs'
 app.set 'views', __dirname + '/app/views'
 
 app.use config.route
