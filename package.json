@@ -4,7 +4,7 @@
   "author": "gsmlg",
   "description": "Macros mine is a light weight web application.",
   "scripts": {
-    "start": "node node_modules/.bin/coffee server.coffee"
+    "start": "node run.js"
   },
   "dependencies": {
     "express": "~4.4.3",

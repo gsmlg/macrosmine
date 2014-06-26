@@ -1,0 +1,8 @@
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(150deg, #f17045, #104761, #0174b9);
+}

@@ -2,9 +2,12 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
+    {{> header}}
     <h1>Hellow {{name}}, welcome here!</h1>
     {{> yield}}
+    {{> footer}}
   </body>
 </html>
