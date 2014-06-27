@@ -10,6 +10,8 @@ app.set 'views', __dirname + '/app/views'
 app.use express.static(__dirname + '/public')
 app.use config.route
 
+app.use '/assets', config.assets
+
 app.get '/', (req, res)->
   res.send 200, 'Good Night!'
   res.end()

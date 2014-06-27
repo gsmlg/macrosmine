@@ -2,12 +2,13 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="/main.css"/>
   </head>
   <body>
     {{> header}}
     <h1>Hellow {{name}}, welcome here!</h1>
     {{> yield}}
     {{> footer}}
+    <script data-main="/assets/main.js" src="/assets/loader.js" type="text/javascript"></script>
   </body>
 </html>

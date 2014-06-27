@@ -5,13 +5,9 @@ router = new Router
 
 site = require '../app/controllers/siteController'
 
-router.get '/',(n...)->
+router.get '/', (n...)->
   site = require '../app/controllers/siteController'
   site.home n...
-
-router.get '/:name', (req, res)->
-  name = req.param('name')
-  res.render 'layout', {title: "Welcome #{name? and name or ''}", name: name}
 
 router.get '/js/:file', (req, res)->
   name = req.param('file')
