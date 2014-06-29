@@ -6,6 +6,7 @@ types = ['javascripts', 'stylesheets', 'images']
 assets = new Mincer.Environment()
 
 assets.appendPath join(root, 'lib')
+assets.appendPath join(root, 'vendor')
 
 for name in types
   assets.appendPath join(root, 'app', 'assets', name)

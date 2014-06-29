@@ -7,10 +7,11 @@
     "start": "node run.js"
   },
   "dependencies": {
-    "express": "~4.4.3",
     "coffee-script": "~1.7.1",
+    "express": "~4.4.3",
     "handlebars": "~2.0.0-alpha.4",
-    "underscore": "~1.6.0",
-    "mincer": "~1.0.5"
+    "less": "^1.7.3",
+    "mincer": "~1.0.5",
+    "underscore": "~1.6.0"
   }
 }

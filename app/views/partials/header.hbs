@@ -1,9 +1,16 @@
-<header>
-  <nav>
-    <ul>
-      {{#each topMenus}}
-        <li class="{{#if activate}}acitvate{{/if}}"><a href="{{link}}">{{name}}</a></li>
-      {{/each}}
-    </ul>
-  </nav>
+<header class="navbar navbar-inverse mm-header">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand">{{AppName}}</a>
+    </div>
+    <nav class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        {{#each topMenus}}
+          <li class="{{#if activate}}acitvate{{/if}}">
+            <a href="{{link}}">{{name}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
 </header>
