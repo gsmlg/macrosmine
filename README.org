@@ -2,4 +2,15 @@
 #+AUTHOR: GSMLG
 #+DATE: Sun Jun 29 22:33:02 2014
 * Create Home Page
-  * TODO use bootstrap
+** TODO use bootstrap[fn:3]
+** TODO make a nice view
+* Create New AMD System[fn:2]
+* Create New View System[fn:1]
+
+* Footnotes
+
+[fn:2] like requirejs and seajs.
+
+[fn:1] Handlebars
+
+[fn:3] bootstrap 3.2
