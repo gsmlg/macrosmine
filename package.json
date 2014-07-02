@@ -14,12 +14,14 @@
   "dependencies": {
     "coffee-script": "~1.7.1",
     "express": "~4.4.3",
+    "glob": "^4.0.3",
     "handlebars": "~2.0.0-alpha.4",
     "less": "^1.7.3",
     "mincer": "~1.0.5",
     "underscore": "~1.6.0"
   },
   "devDependencies": {
+    "gulp": "^3.8.5",
     "karma": "^0.12.16",
     "karma-coffee-preprocessor": "^0.2.1",
     "karma-growl-reporter": "^0.1.1",
